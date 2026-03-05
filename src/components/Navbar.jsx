@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar${scrolled ? ' navbar-scrolled' : ''}`}>
-      <a href="#hero" className="navbar-logo">Epique Interiors</a>
+      <a href="#hero" className="navbar-logo">Epique <span>Interiors</span></a>
 
       {/* Desktop links */}
       <ul className="navbar-links">
