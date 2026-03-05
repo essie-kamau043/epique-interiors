@@ -40,3 +40,8 @@
   .contact { padding: 90px var(--side-pad); }
   .contact-inner { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 768px) {
+  .contact { padding: 70px 24px; }
+  .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+}

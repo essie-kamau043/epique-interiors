@@ -83,3 +83,9 @@
   .portfolio-grid { columns: 1; padding: 0 16px; }
   .portfolio-head { padding: 0 16px; }
 }
+
+@media (max-width: 768px) {
+  .portfolio-section { padding: 70px 24px 80px; }
+  .portfolio-head { flex-direction: column; align-items: flex-start; }
+  .portfolio-grid { columns: 1; }
+}
