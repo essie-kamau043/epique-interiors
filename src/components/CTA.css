@@ -1,0 +1,23 @@
+.cta {
+  position: relative; padding: 150px var(--side-pad); text-align: center;
+  background: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&q=80') center/cover no-repeat;
+}
+
+.cta::before { content: ''; position: absolute; inset: 0; background: rgba(26,23,20,0.8); }
+.cta-inner { position: relative; z-index: 1; max-width: 740px; margin: 0 auto; }
+
+.cta-heading { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5.5vw, 4.4rem); color: var(--white); margin-bottom: 22px; line-height: 1.18; }
+.cta-heading em { font-style: italic; color: var(--gold); }
+.cta-sub { color: rgba(255,255,255,0.7); font-size: 1.25rem; margin-bottom: 50px; line-height: 1.85; }
+.cta-btns { display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; }
+
+.cta-whatsapp {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 18px 38px; background: #25d366; color: var(--white);
+  font-family: 'Jost', sans-serif; font-size: 0.95rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  text-decoration: none; transition: background 0.25s;
+}
+
+.cta-whatsapp:hover { background: #1ebd58; }
+@media (max-width: 900px) { .cta { padding: 100px var(--side-pad); } }

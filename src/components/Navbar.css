@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 60px;
+  background: rgba(249, 245, 239, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(196, 169, 106, 0.2);
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-scrolled {
+  padding: 14px 60px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.navbar-logo span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.navbar-link {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: var(--gold);
+}
+
+.navbar-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.25s, color 0.25s;
+}
+
+.navbar-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .navbar { padding: 18px 28px; }
+  .navbar-scrolled { padding: 12px 28px; }
+  .navbar-links { gap: 20px; }
+}
+
+@media (max-width: 600px) {
+  .navbar-link { display: none; }
+}

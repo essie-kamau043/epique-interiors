@@ -1,0 +1,38 @@
+
+.about { padding: 130px var(--side-pad); background: var(--warm); }
+
+.about-inner {
+  max-width: 1400px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 90px; align-items: center;
+}
+
+.about-image-wrap { position: relative; }
+
+.about-image-wrap::before {
+  content: '';
+  position: absolute;
+  top: -22px; left: -22px; right: 22px; bottom: 22px;
+  border: 1px solid var(--gold);
+  z-index: 0; pointer-events: none;
+}
+
+.about-image { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; position: relative; z-index: 1; }
+
+.about-badge {
+  position: absolute; z-index: 2;
+  bottom: 30px; right: -28px;
+  background: var(--dark); color: var(--white);
+  padding: 32px 36px; text-align: center;
+}
+
+.about-badge-num { font-family: 'Playfair Display', serif; font-size: 3.6rem; color: var(--gold); display: block; line-height: 1; }
+.about-badge-sub { font-size: 0.9rem; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.8; }
+.about-para { font-size: 1.2rem; line-height: 2; color: var(--text); margin: 26px 0; }
+.about-para:last-of-type { margin-bottom: 40px; }
+
+@media (max-width: 900px) {
+  .about { padding: 90px var(--side-pad); }
+  .about-inner { grid-template-columns: 1fr; }
+  .about-badge { right: 0; }
+}
